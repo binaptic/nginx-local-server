@@ -1,0 +1,9 @@
+version: '2'
+services:
+  nginx:
+    # restart: always
+    build: ./nginx
+    volumes:
+      - "./html:/var/www/html"
+    ports:
+      - "80:80"
